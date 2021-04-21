@@ -7,7 +7,7 @@
 
 ******* configuration control constant for use of Blynk and/or Thingspeak ***/
 
-const String App1 = "BLYNK";         // empty string if not applicable -> "" else "BLYNK" 
+const String App1 = "";//"BLYNK";         // empty string if not applicable -> "" else "BLYNK" 
 const String App2 = "THINGSPEAK";    // empty string if not applicable -> "" else "THINGSPEAK"
 
 
@@ -15,11 +15,11 @@ const String App2 = "THINGSPEAK";    // empty string if not applicable -> "" els
 
 char auth[] = "your Blynk Auth Token"; // Blynk Auth Token
 
-char ssid[] = "your SSID";                           // WiFi Router ssid
-char pass[] = "your Password";             // WiFi Router password
+char ssid[] = "NETGEAR88";                           // WiFi Router ssid
+char pass[] = "ab20e500f6";             // WiFi Router password
 
 const char* server = "api.thingspeak.com";        // Thingspeak Write API
-const char* api_key = "your Thingspeak API key";         // API write key 
+const char* api_key = "7JCOIRZGDFN3GQI4";         // API write key 
 
 /****** MQTT Settings ********************************************************/
 
@@ -28,12 +28,12 @@ const char* mqtt_server = "192.xxx.xxx.xxx";      // MQTT Server (broker) addres
 
 /****** Additional Settings **************************************************/
 
-#define LANGUAGE 'DE'               //check translation.h for available languages. Currently EN/DE/FR/IT/PL/RO/SP/TR/NL
+#define LANGUAGE 'EN'               //check translation.h for available languages. Currently EN/DE/FR/IT/PL/RO/SP/TR/NL
 
 #define TEMP_CORR (-1)              //Manual correction of temp sensor (mine reads 1 degree too high)
 #define HUMI_CORR (+4)              // not used anymore in V2.34 (automatically calculated)
 
-#define ELEVATION (505)             //Enter your elevation in m ASL to calculate rel pressure (ASL/QNH) at your place
+#define ELEVATION (82)             //Enter your elevation in m ASL to calculate rel pressure (ASL/QNH) at your place
 
 #define sleepTimeMin (10)           //setting of deepsleep time in minutes (default: 10)
 
@@ -42,7 +42,7 @@ const char* mqtt_server = "192.xxx.xxx.xxx";      // MQTT Server (broker) addres
 //           in the code. I saw a fork on Github (truckershitch) which I believe has covered this.
 
 #define NTP_SERVER      "ch.pool.ntp.org"
-#define TZ              1           // (utc+) TZ in hours
+#define TZ              0           // (utc+) TZ in hours
 #define DST_MN          60          // use 60mn for summer time in some countries
 
 #define TZ_SEC          ((TZ)*3600)  // don't change this
